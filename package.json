@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "tsup src/server.ts --config tsup.config.ts",
     "dev": "tsx watch src/server.ts",
     "knex": "node --no-warnings --loader tsx ./node_modules/.bin/knex",
     "lint": "eslint src/**/*.ts",
@@ -30,6 +31,7 @@
     "eslint-plugin-n": "^16.3.1",
     "eslint-plugin-promise": "^6.1.1",
     "supertest": "^6.3.3",
+    "tsup": "^7.3.0",
     "tsx": "^4.1.2",
     "typescript": "^5.2.2",
     "vitest": "^0.34.6"
